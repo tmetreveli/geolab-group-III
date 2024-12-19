@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Register Form</h1>
+    <form method="post">
+        {{ form.username(class="form-control mt-2", placeholder="Name") }}
+        {{ form.password(class="form-control mt-2", placeholder="Password") }}
+        {{ form.repeat_password(class="form-control mt-2", placeholder="Repeat Password") }}
+        {{ form.submit(class="bg-warning mt-2 mb-2 form-control" ) }}
+    </form>
+{% endblock %}

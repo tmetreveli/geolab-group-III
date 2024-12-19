@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>Form</h1>
+    <form method="post" enctype="multipart/form-data">
+        {{ form.name(class="form-control mt-2", placeholder="Name") }}
+        {{ form.img(class="form-control mt-2", placeholder="IMG") }}
+        {{ form.description(class="form-control mt-2", placeholder="Description") }}
+        {{ form.submit(class="bg-warning mt-2 mb-2 form-control" ) }}
+    </form>
+{% endblock %}

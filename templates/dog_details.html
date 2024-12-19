@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="row mt-5">
+    <div class="col">
+        <div class="card mt-5" style="width: 18rem;">
+            <img src="../static/{{ dog.img }}"
+                 class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">{{ dog.name }}</h5>
+                <p class="card-text">{{ dog.description }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
